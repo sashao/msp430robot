@@ -81,7 +81,7 @@ int main(void) {
     P2DIR = TWOS;
 
     const unsigned move = 3000;
-    const unsigned pause = 2000*0;
+    const unsigned pause = 2000;
 
     delay(move);
 
@@ -111,7 +111,7 @@ int main(void) {
 
     const unsigned move2 = 1000;
     const unsigned pause2 = 1000;
-    const unsigned pause_turn = 0;
+    const unsigned pause_turn = 10;
     while (true)
 
     {

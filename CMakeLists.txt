@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 2.8)
 
 #aux_source_directory(. SRC_LIST)
 
-file(GLOB SRC_LIST "./*.c*")
+file(GLOB SRC_LIST "./*.c**")
 
 
 
@@ -16,7 +16,7 @@ set(CMAKE_CXX_COMPILER /usr/bin/msp430-gcc)
 set(CMAKE_C_LINK_EXECUTABLE   /usr/bin/msp430-gcc)
 set(CMAKE_CXX_LINK_EXECUTABLE /usr/bin/msp430-gcc)
 
-SET(CMAKE_CXX_LINK_EXECUTABLE "<CMAKE_CXX_COMPILER> <FLAGS> -mmcu=msp430g2553 <CMAKE_CXX_LINK_FLAGS> <LINK_FLAGS> <OBJECTS>  -o <TARGET> <LINK_LIBRARIES>")
+SET(CMAKE_CXX_LINK_EXECUTABLE "<CMAKE_CXX_COMPILER> -pipe -Os <FLAGS> -mmcu=msp430g2553 <CMAKE_CXX_LINK_FLAGS> <LINK_FLAGS> <OBJECTS>  -o <TARGET> <LINK_LIBRARIES>")
 
 set(CMAKE_C_FLAGS "-pipe -Os -mmcu=msp430g2553")
 
