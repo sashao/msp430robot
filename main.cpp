@@ -3,8 +3,6 @@
 //#include <iostream>
 #include <msp430g2353.h>
 
-//using namespace std;
-
 
 void delay(unsigned msec) {
     const volatile unsigned long tested_iterations = 25000;

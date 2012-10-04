@@ -1,0 +1,1 @@
+Application is build on Arch linux amd msp-gcc with cmake.
