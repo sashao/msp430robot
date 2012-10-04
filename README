@@ -1,1 +1,9 @@
 Application is build on Arch linux amd msp-gcc with cmake.
+
+
+How to build on Arch Linux:
+
+* Install yaourt, cmake and your c++ IDE (qtcreator)
+* install everything you can find with "yaourt -Ss mspgcc"
+
+Play with it !
